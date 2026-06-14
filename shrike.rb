@@ -5,21 +5,21 @@
 class Shrike < Formula
   desc "Hunt runaway, zombie, and herd processes on your Mac"
   homepage "https://github.com/d56de/shrike"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/d56de/shrike/releases/download/v0.4.1/shrike_0.4.1_darwin_amd64.tar.gz"
-    sha256 "a2b081455377b23438077571c2d57f407cfb68a15304341e81c692132f29ff0f"
+    url "https://github.com/d56de/shrike/releases/download/v0.4.2/shrike_0.4.2_darwin_amd64.tar.gz"
+    sha256 "04c73894d15205b793652ee08101016ae764a7c70b1f0d242f5168e3f5089cac"
 
     define_method(:install) do
       bin.install "shrike"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/d56de/shrike/releases/download/v0.4.1/shrike_0.4.1_darwin_arm64.tar.gz"
-    sha256 "d4faabed29cd3f0245a041a2a913a3a50f83a6843db4d4eb9973bee0de1da8b4"
+    url "https://github.com/d56de/shrike/releases/download/v0.4.2/shrike_0.4.2_darwin_arm64.tar.gz"
+    sha256 "fd807d193062bdc1481e1eabb764d8a8c29a5a364f85190730e2c98e7f4b01b3"
 
     define_method(:install) do
       bin.install "shrike"
